@@ -1,0 +1,24 @@
+{
+  "name": "cas-login",
+  "version": "0.0.1",
+  "description": "Login to Berkeley's CAS through the terminal.",
+  "keywords": [
+    "cas-login",
+    "CalNet Authentication Service",
+    "login",
+    "berkeley"
+  ],
+  "author": {
+    "name": "Edward Look",
+    "email": "edwlook@gmail.com",
+    "url": "http://edward.land/"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "main": "./lib",
+  "dependencies": {
+    "request": "~2.34.0"
+  }
+}
