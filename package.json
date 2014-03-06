@@ -1,9 +1,9 @@
 {
-  "name": "cas-login",
+  "name": "cas-client",
   "version": "0.0.3",
   "description": "Login to Berkeley's CAS through the terminal.",
   "keywords": [
-    "cas-login",
+    "cas-client",
     "CalNet Authentication Service",
     "login",
     "berkeley"
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/edwlook/cas-login-npm"
+    "url": "https://github.com/edwlook/cas-client"
   },
   "main": "./lib",
   "dependencies": {

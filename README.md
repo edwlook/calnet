@@ -8,12 +8,12 @@ Login to Berkeley's CAS through the terminal.
 
 1) Install with npm:
 
-    npm install cas-login
+    npm install cas-client
 
 2) Include module and enter CalNet credentials:
 
 ```js
-var casClient = require('cas-login').configure({
+var casClient = require('cas-client').configure({
   username: 'USERNAME',
   password: 'PASSWORD'
 });
