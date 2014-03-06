@@ -6,9 +6,12 @@ var casClient = require('../../lib').configure({
   password: cred.password
 });
 
+// Attempt to login
 casClient.login(function(err, data) {
   if (err) return console.log(err.message);
-  casClient.get('https://csweb.housing.berkeley.edu/student/laundry/room_summary_srv.php', function(err, data) {
+  var laundryUrl = 'https://csweb.housing.berkeley.edu/student/laundry/room_summary_srv.php';
+  // Login successful, fetch laundry data
+  casClient.get(laundryUrl, function(err, data) {
     if (err) return console.log(err.message);
     console.log(data);
   });
