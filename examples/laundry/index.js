@@ -1,7 +1,15 @@
+'use strict';
+
+var cred = require('../cred');
 var casClient = require('../../lib').configure({
-  username: 'user',
-  password: 'pass'
+  username: cred.username,
+  password: cred.password
 });
 
-console.log(casClient.username);
-console.log(casClient.password);
+casClient.login(function(err, data) {
+  if (err) return console.log(err);
+  casClient.get('https://csweb.housing.berkeley.edu/student/laundry/room_summary_srv.php', function(err, data) {
+    if (err) return console.log(err);
+    console.log(data);
+  });
+});
