@@ -6,7 +6,7 @@ Login to Berkeley's CAS through the terminal.
 
 ## Installation
 
-1) Install with npm:
+1) Install with [npm](https://github.com/npm/npm):
 
     npm install calnet
 
