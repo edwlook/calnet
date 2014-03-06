@@ -1,4 +1,4 @@
-CalNet Authentication Service - Login
+CalNet Authentication Client
 ==============
 Login to Berkeley's CAS through the terminal.
 
@@ -8,12 +8,12 @@ Login to Berkeley's CAS through the terminal.
 
 1) Install with npm:
 
-    npm install cas-client
+    npm install calnet
 
 2) Include module and enter CalNet credentials:
 
 ```js
-var casClient = require('cas-client').configure({
+var calnet = require('calnet').configure({
   username: 'USERNAME',
   password: 'PASSWORD'
 });
@@ -25,11 +25,11 @@ Let's try logging in and grabbing data from Berkeley's laundry service.
 
 ```js
 // Attempt to login
-casClient.login(function(err, data) {
+calnet.login(function(err, data) {
   if (err) return console.log(err.message);
   var laundryUrl = 'https://csweb.housing.berkeley.edu/student/laundry/room_summary_srv.php';
   // Login successful, fetch laundry data
-  casClient.get(laundryUrl, function(err, data) {
+  calnet.get(laundryUrl, function(err, data) {
     if (err) return console.log(err.message);
     console.log(data);
   });
