@@ -1,6 +1,6 @@
 {
   "name": "cas-login",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Login to Berkeley's CAS through the terminal.",
   "keywords": [
     "cas-login",
