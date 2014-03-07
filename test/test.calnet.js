@@ -3,15 +3,40 @@ var assert = require('chai').assert,
 
 describe('Calnet', function() {
 
+  var calnet;
+  before(function() {
+    calnet = new Calnet({
+      username: 'fake-user',
+      password: 'fake-pass'
+    });
+  });
+
   describe('#init()', function() {
+
     it('should set the username and password', function() {
-      var calnet = new Calnet({
-        username: 'fake-user',
-        password: 'fake-pass'
-      });
       assert('fake-user' === calnet.username, 'Username not set correctly.');
       assert('fake-pass' === calnet.password, 'Password not set correctly.');
     });
+
+    it('should throw an error', function() {
+      var omitPassword = function() {
+        var calnet = new Calnet({
+          username: 'fake-user',
+          password: ''
+        });
+      };
+      assert.throw(omitPassword, 'Username or password not supplied.');
+    });
+
+  });
+
+
+  describe('#login()', function() {
+
+    it('should POST to login without error', function(done) {
+      calnet.login(done);
+    });
+
   });
 
 });
