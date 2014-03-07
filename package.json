@@ -1,6 +1,6 @@
 {
   "name": "calnet",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Login to Berkeley's CAS through the terminal.",
   "keywords": [
     "calnet",
