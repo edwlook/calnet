@@ -1,5 +1,7 @@
 CalNet Authentication Client
 ==============
+[![Build Status](https://travis-ci.org/edwlook/calnet.png?branch=master)](https://travis-ci.org/edwlook/calnet)
+
 Login to Berkeley's CAS through the terminal.
 
 *Login session only exists within the terminal. Using this will not establish a browser session.
