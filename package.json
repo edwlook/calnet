@@ -21,5 +21,8 @@
   "main": "./lib",
   "dependencies": {
     "request": "~2.34.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.17.1"
   }
 }
