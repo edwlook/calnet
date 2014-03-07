@@ -30,11 +30,26 @@ describe('Calnet', function() {
 
   });
 
-
   describe('#login()', function() {
 
     it('should POST to login without error', function(done) {
       calnet.login(done);
+    });
+
+  });
+
+  describe('#logout()', function() {
+
+    it('should GET to logout without error', function(done) {
+      calnet.logout(done);
+    });
+
+  });
+
+  describe('#get()', function() {
+
+    it('should GET without error', function(done) {
+      calnet.get('http://www.berkeley.edu/', done);
     });
 
   });
