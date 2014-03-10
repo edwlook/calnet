@@ -11,7 +11,7 @@ describe('Calnet', function() {
     });
   });
 
-  describe('#init()', function() {
+  describe('#constructor()', function() {
 
     it('should set the username and password', function() {
       assert('fake-user' === calnet.username, 'Username not set correctly.');
